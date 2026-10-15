@@ -1,0 +1,16 @@
+{
+  "name": "dailforg-env",
+  "version": "2.2.0",
+  "private": true,
+  "type": "module",
+  "description": "DailForg Env 2.2 — connected knowledge research and progress tracking",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "build": "node scripts/build-standalone.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build:deploy": "node scripts/build-deploy.mjs",
+    "qa:browser": "python tests/competition_browser.py"
+  },
+  "dependencies": {}
+}

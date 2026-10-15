@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build:deploy"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Permissions-Policy = "camera=(self), microphone=(self), geolocation=()"
+    Cross-Origin-Opener-Policy = "same-origin-allow-popups"
